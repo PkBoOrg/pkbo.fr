@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="refresh" content="0; url=https://poke-boa.marketplace.dood.com/fr/shops/poke-bowl/poke-boa">
     <title>Pok&eacute;Boa</title>
+    <style>
+        #main {
+            width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .loader {
+          width: 60px;
+          margin: 0 auto;
+          aspect-ratio: 2;
+          --_g: no-repeat radial-gradient(circle closest-side,#000 90%,#0000);
+          background: 
+            var(--_g) 0%   50%,
+            var(--_g) 50%  50%,
+            var(--_g) 100% 50%;
+          background-size: calc(100%/3) 50%;
+          animation: l3 1s infinite linear;
+        }
+        @keyframes l3 {
+            20%{background-position:0%   0%, 50%  50%,100%  50%}
+            40%{background-position:0% 100%, 50%   0%,100%  50%}
+            60%{background-position:0%  50%, 50% 100%,100%   0%}
+            80%{background-position:0%  50%, 50%  50%,100% 100%}
+        }
+    </style>
 </head>
 <body>
-    <p>Commandez chez <a href="https://pokeboa.com">Pok&eacute;Boa</a>.</p>
+    <div id="main">
+        <p style="font-size: 2em">Commander chez <a href="https://poke-boa.marketplace.dood.com/fr/shops/poke-bowl/poke-boa">Pok&eacute;Boa</a>.</p>
+        <p>Redirection en cours vers notre site de commande</p>
+        <div class="loader"></div>
+    </div>
 </body>
 </html>
